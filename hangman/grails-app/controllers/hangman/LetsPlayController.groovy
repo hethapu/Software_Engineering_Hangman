@@ -2,11 +2,33 @@ package hangman
 
 class LetsPlayController {
 
-    def index() {
+	
+	def select() {
 		
-		Game myGame = new Game("Once upon a time")
+		Integer GameID = params.int('id') 
+		
+		Phrase SelectedPhrase = Phrase.get(GameID)
+		
+		if(SelectedPhrase)
+		{
+		Game myGame = new Game(SelectedPhrase.Value)
 		session["myGame"] = myGame
-		[myGame : myGame]
+		
+		render(view:"index",  model: [myGame: myGame])
+		}
+		
+	}
+	
+	def list() {
+		[Phrases:Phrase.getAll()]
+	}
+	
+    def index() {
+		Game myGame = session["myGame"]
+		if(myGame)
+			[myGame : myGame]
+		else
+			redirect action: 'list'
 	}
 	
 	def guess() {
@@ -14,10 +36,5 @@ class LetsPlayController {
 		myGame.Guess(params.id)
 		render(view:'index', model:[myGame : myGame])
 	}
-	
-	def newPhrase() {
-		Game myGame = new Game(params.Phrase)
-		session["myGame"] = myGame
-		render(view:'index', model:[myGame : myGame])
-	}
+
 }

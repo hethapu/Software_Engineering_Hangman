@@ -1,10 +1,5 @@
 <html>
 <body>
-<g:form name="myForm"  action="newPhrase">
-Enter New Phrase:<g:textField name="Phrase"/>
-<g:submitButton name="New"/>
-</g:form>
-<hr>
 <br>
 Bad Guesses: ${myGame.BadGuesses }
 <br>
