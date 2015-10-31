@@ -1,5 +1,13 @@
+/asset/
+/dbdoc/
 /grails/
+/hangman/
+/hibernate/
+/hibernate.cfg.xml
+/javascripts/
 /org/
+/spring/
+/uglifyjs/
 /AssetPipelineBootStrap$_closure1.class
 /AssetPipelineBootStrap.class
 /AssetUrlMappings$__clinit__closure1.class
@@ -37,6 +45,8 @@
 /DefaultCacheConfig$_run_closure1_closure2.class
 /DefaultCacheConfig$_run_closure1_closure3.class
 /DefaultCacheConfig.class
+/DefaultWebXmlConfig$_run_closure1.class
+/DefaultWebXmlConfig.class
 /JQueryConfig$_run_closure1.class
 /JQueryConfig.class
 /JQueryPluginResources$_run_closure1.class
@@ -67,9 +77,5 @@
 /UrlMappings$__clinit__closure1_closure2.class
 /UrlMappings$__clinit__closure1_closure2_closure3.class
 /UrlMappings.class
-/asset/
-/hangman/
 /resources$_run_closure1.class
 /resources.class
-/DefaultWebXmlConfig$_run_closure1.class
-/DefaultWebXmlConfig.class
