@@ -1,0 +1,166 @@
+html {
+	background: #000 url(/images/page_background.jpg) top center repeat-y;
+	
+
+	height: 100%;
+}
+
+a {
+	color: #FFC557;
+	
+}
+
+bodyold {
+	background: #ffffff;
+	color: #333333;
+	margin: 0 auto;
+	max-width: 960px;
+	min-height: 90%;
+}
+
+body {
+	width: 640px;
+	margin: 0 auto;
+    padding: 0;
+	background: #530C06 url(/images/main_background.jpg) repeat;
+    background-attachment: fixed;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #FFC557;
+
+	font-size: 18px;
+	border: 1px solid #000;
+}
+
+#header {
+	 height: 110px;
+	background-color: #000000;
+}
+
+
+#Logo {
+
+position: absolute;
+  top: 0px;
+  left: 50%;
+   width: 300px;
+   height: 100px;
+   margin-left: -150px; /* Half the width */
+}
+
+#FBPic {
+ position: relative;
+ top: 5px;
+ left: 5px;
+ color: #ffffff;
+}
+
+
+.nav {
+	position:relative;
+left:50%;top:10px;
+margin-left:-200px; /* negative margin equal to half the width */
+width:410px;
+	padding: 0px;
+}
+
+.nav ul {
+	overflow: hidden;
+	padding-left: 0;
+	zoom: 1;
+}
+
+.nav li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+	}
+
+
+.nav a {
+	background-color: #808080;
+	display: block;
+	text-align:center;
+	line-height: 30px;
+	width:30px; /* fixed width */
+	height:30px;
+	padding: 3px 5px;
+	text-decoration: none;
+	   -moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+	        	color: #ffffff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	
+}
+
+
+
+
+
+
+.nav a:active, .nav a:visited {
+	color: #ffffff;
+}
+
+
+
+.nav a:focus, .nav a:hover {
+	color: #FFC557;
+	outline: solid;
+}
+
+.nav a.goodguess
+{
+	color: #ffffff;
+	background-color: #FFC557;  
+	outline: none;
+}
+
+.nav a.badguess {
+	color: #ffffff;
+	background-color: #fff1d7;
+	outline: none;
+}
+
+div.phrase 
+{
+text-align: center;
+
+font-size:24pt;
+font-family:times new roman;
+font-weight:bold;
+font-style:italic;
+color:#FFC557;
+}
+
+
+
+table {
+    border-collapse: collapse;
+
+
+}
+
+tr {
+	border-bottom: 1px solid #000;
+	    
+    padding-right: 5px;
+}
+
+th {
+	    
+
+	text-align:left;
+    background-color: #000000;
+}
+
+th, td {
+	    padding-right: 15px;
+}
+
+
+
+}
